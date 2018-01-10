@@ -2,6 +2,7 @@
 
 class Person {
   public void eat(Apple apple) {
+    // apple 对象调用了 getPeeled() 方法，getPeeled()方法中的this就是这个apple对象
     Apple peeled = apple.getPeeled();
     System.out.println("Yummy");
   }

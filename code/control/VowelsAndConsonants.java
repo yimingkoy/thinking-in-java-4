@@ -19,6 +19,10 @@ public class VowelsAndConsonants {
         case 'y':
         case 'w': print("Sometimes a vowel");
                   break;
+        // case 2.4:
+          // break;
+        case 0x00ff:
+          break;
         default:  print("consonant");
       }
     }

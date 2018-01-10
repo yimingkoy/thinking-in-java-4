@@ -5,6 +5,7 @@ public class ForEachFloat {
   public static void main(String[] args) {
     Random rand = new Random(47);
     float f[] = new float[10];
+    // 用旧式的for语法组装，因为组装时必须要访问下标
     for(int i = 0; i < 10; i++)
       f[i] = rand.nextFloat();
     for(float x : f)

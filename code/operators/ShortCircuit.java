@@ -20,6 +20,7 @@ public class ShortCircuit {
     return val < 3;
   }
   public static void main(String[] args) {
+    // test3(2) 没有得到执行
     boolean b = test1(0) && test2(2) && test3(2);
     print("expression is " + b);
   }
