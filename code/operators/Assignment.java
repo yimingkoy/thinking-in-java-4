@@ -3,7 +3,9 @@
 import static net.mindview.util.Print.*;
 
 class Tank {
-  int level;
+  // 初始化成0
+  // int level;
+  int level = 0;
 }	
 
 public class Assignment {

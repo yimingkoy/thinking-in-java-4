@@ -6,9 +6,11 @@ import static net.mindview.util.Print.*;
 public class MathOps {
   public static void main(String[] args) {
     // Create a seeded random number generator:
+    // 提供特定的参数值将总产生相同的随机数序列
     Random rand = new Random(47);
     int i, j, k;
     // Choose value from 1 to 100:
+    // 生成 1 到 100 的随机数
     j = rand.nextInt(100) + 1;
     print("j : " + j);
     k = rand.nextInt(100) + 1;
@@ -49,6 +51,11 @@ public class MathOps {
     print("u *= v : " + u);
     u /= v;
     print("u /= v : " + u);
+    double v1 = rand.nextDouble();
+    // 报错，默认时dobule类型，赋值给float类型会丢失精度。
+    // float test1 = 1.0;
+    float test1 = 1.0f;
+    float test2 = 1.0F;
   }
 } /* Output:
 j : 59

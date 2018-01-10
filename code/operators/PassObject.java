@@ -4,7 +4,8 @@
 import static net.mindview.util.Print.*;
 
 class Letter {
-  char c;
+  char c = '\u0000';
+  // char c;
 }
 
 public class PassObject {
