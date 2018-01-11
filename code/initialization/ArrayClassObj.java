@@ -6,7 +6,12 @@ import static net.mindview.util.Print.*;
 public class ArrayClassObj {
   public static void main(String[] args) {
     Random rand = new Random(47);
+    // 注意区别两条语句的不同
     Integer[] a = new Integer[rand.nextInt(20)];
+    print(Arrays.toString(a));
+
+    int[] b = new int[20];
+    print(Arrays.toString(b));
     print("length of a = " + a.length);
     for(int i = 0; i < a.length; i++)
       a[i] = rand.nextInt(500); // Autoboxing

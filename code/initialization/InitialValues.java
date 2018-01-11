@@ -23,6 +23,7 @@ public class InitialValues {
     print("float          " + f);
     print("double         " + d);
     print("reference      " + reference);
+    print("\u0000");
   }
   public static void main(String[] args) {
     InitialValues iv = new InitialValues();

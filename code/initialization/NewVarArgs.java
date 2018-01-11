@@ -9,13 +9,21 @@ public class NewVarArgs {
   }
   public static void main(String[] args) {
     // Can take individual elements:
+    int[] test;
+    test = new int[2];
+    // for(int i = 0; i < test.length; i++){
+      // System.out.println(test[i]);
+    // }
+    // 编译器实际上会去填充数组
     printArray(new Integer(47), new Float(3.14),
       new Double(11.11));
     printArray(47, 3.14F, 11.11);
     printArray("one", "two", "three");
-    printArray(new A(), new A(), new A());
+    // printArray(new A(), new A(), new A());
     // Or an array:
+    // 编译器会发现这已经是一个数组了，所以不会在其上执行转换操作
     printArray((Object[])new Integer[]{ 1, 2, 3, 4 });
+    //空数组也是可以的
     printArray(); // Empty list is OK
   }
 } /* Output: (75% match)

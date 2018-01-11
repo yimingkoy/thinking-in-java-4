@@ -10,6 +10,7 @@ public class VarArgs {
     System.out.println();
   }
   public static void main(String[] args) {
+    // new Object[]{} 创建一个 Object 数组 
     printArray(new Object[]{
       new Integer(47), new Float(3.14), new Double(11.11)
     });

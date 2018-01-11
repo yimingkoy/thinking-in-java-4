@@ -11,5 +11,7 @@ public class QuickStart {
         int d = (int)aa;
         int c = 100;
         int i = 10, j=i+10;
+        int k;
+        k = 10;
     }
 }

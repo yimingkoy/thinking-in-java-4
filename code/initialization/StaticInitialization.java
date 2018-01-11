@@ -45,8 +45,8 @@ public class StaticInitialization {
     table.f2(1);
     cupboard.f3(1);
   }
-  static Table table = new Table();
-  static Cupboard cupboard = new Cupboard();
+  static Table table = new Table(); //1
+  static Cupboard cupboard = new Cupboard(); //2
 } /* Output:
 Bowl(1)
 Bowl(2)

@@ -23,6 +23,8 @@ class House {
 public class OrderOfInitialization {
   public static void main(String[] args) {
     House h = new House();
+    // 静态变量只占一份存储空间，static 关键字不能用于局部变量，static 关键字只能作用于域。
+    // static int a = 10;
     h.f(); // Shows that construction is done
   }
 } /* Output:
