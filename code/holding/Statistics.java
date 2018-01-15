@@ -10,6 +10,7 @@ public class Statistics {
     for(int i = 0; i < 10000; i++) {
       // Produce a number between 0 and 20:
       int r = rand.nextInt(20);
+      // 如果键不存在，get方法返回null
       Integer freq = m.get(r);
       m.put(r, freq == null ? 1 : freq + 1);
     }

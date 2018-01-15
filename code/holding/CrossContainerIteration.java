@@ -4,6 +4,7 @@ import java.util.*;
 
 public class CrossContainerIteration {
   public static void display(Iterator<Pet> it) {
+    // 迭代器统一了对容器的访问方式。
     while(it.hasNext()) {
       Pet p = it.next();
       System.out.print(p.id() + ":" + p + " ");

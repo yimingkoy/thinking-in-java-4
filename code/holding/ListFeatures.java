@@ -8,11 +8,17 @@ public class ListFeatures {
     Random rand = new Random(47);
     List<Pet> pets = Pets.arrayList(7);
     print("1: " + pets);
+    // 1: [Rat, Manx, Cymric, Mutt, Pug, Cymric, Pug]
     Hamster h = new Hamster();
-    pets.add(h); // Automatically resizes
+    // add 方法
+    pets.add(h); // 添加元素自动扩容
     print("2: " + pets);
+    // 2: [Rat, Manx, Cymric, Mutt, Pug, Cymric, Pug, Hamster]
+    // contains 方法
     print("3: " + pets.contains(h));
+    // remove 方法
     pets.remove(h); // Remove by object
+    // get 方法
     Pet p = pets.get(2);
     print("4: " +  p + " " + pets.indexOf(p));
     Pet cymric = new Cymric();
@@ -21,9 +27,10 @@ public class ListFeatures {
     // Must be the exact object:
     print("7: " + pets.remove(p));
     print("8: " + pets);
+    // 在一个具体的位置插入元素
     pets.add(3, new Mouse()); // Insert at an index
     print("9: " + pets);
-    List<Pet> sub = pets.subList(1, 4);
+    List<Pet> sub = pets.subList(1, 4); // 通常都是左闭右开区间，这里也不例外
     print("subList: " + sub);
     print("10: " + pets.containsAll(sub));
     Collections.sort(sub); // In-place sort

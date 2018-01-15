@@ -11,7 +11,7 @@ public class PrintingContainers {
     collection.add("dog");
     return collection;
   }
-  static Map fill(Map<String,String> map) {
+  static Map fill(Map<String, String> map) {
     map.put("rat", "Fuzzy");
     map.put("cat", "Rags");
     map.put("dog", "Bosco");
@@ -19,7 +19,11 @@ public class PrintingContainers {
     return map;
   }	
   public static void main(String[] args) {
+    String[] test = {"aa", "bb", "cc"};
+    print(Arrays.toString(test));
+    // 实现了 List 接口 和 Collection 接口
     print(fill(new ArrayList<String>()));
+    // 实现了 List 接口 和 Collection 接口 和 Queue 接口
     print(fill(new LinkedList<String>()));
     print(fill(new HashSet<String>()));
     print(fill(new TreeSet<String>()));

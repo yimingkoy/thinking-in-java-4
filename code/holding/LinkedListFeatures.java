@@ -17,6 +17,7 @@ public class LinkedListFeatures {
     print("pets.remove(): " + pets.remove());
     print("pets.removeFirst(): " + pets.removeFirst());
     // Only differs in empty-list behavior:
+    // poll() 获取并删除第一个元素
     print("pets.poll(): " + pets.poll());
     print(pets);
     pets.addFirst(new Rat());

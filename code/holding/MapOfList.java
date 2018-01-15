@@ -5,6 +5,7 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class MapOfList {
+  // <? extends Pet>
   public static Map<Person, List<? extends Pet>>
     petPeople = new HashMap<Person, List<? extends Pet>>();
   static {

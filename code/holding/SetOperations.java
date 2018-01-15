@@ -4,10 +4,14 @@ import static net.mindview.util.Print.*;
 
 public class SetOperations {
   public static void main(String[] args) {
+    String test1 = "aaa";
+    String test2 = new String("bbb");
+    print(test1.equals(test2));
     Set<String> set1 = new HashSet<String>();
-    Collections.addAll(set1,
+    Collections.addAll(set1, 
       "A B C D E F G H I J K L".split(" "));
     set1.add("M");
+    // contains 依赖于 equals 方法，那这里调用实际上就是 String 类型的 equals 方法。
     print("H: " + set1.contains("H"));
     print("N: " + set1.contains("N"));
     Set<String> set2 = new HashSet<String>();

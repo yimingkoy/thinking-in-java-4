@@ -6,11 +6,13 @@ public class ListIteration {
   public static void main(String[] args) {
     List<Pet> pets = Pets.arrayList(8);
     ListIterator<Pet> it = pets.listIterator();
+    // hasNext(), next()
     while(it.hasNext())
       System.out.print(it.next() + ", " + it.nextIndex() +
         ", " + it.previousIndex() + "; ");
     System.out.println();
     // Backwards:
+    // hasPrevious(), previous()
     while(it.hasPrevious())
       System.out.print(it.previous().id() + " ");
     System.out.println();
@@ -18,6 +20,7 @@ public class ListIteration {
     it = pets.listIterator(3);
     while(it.hasNext()) {
       it.next();
+      // 使用 set 方法替换访问的最后一个元素
       it.set(Pets.randomPet());
     }
     System.out.println(pets);

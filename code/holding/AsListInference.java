@@ -13,8 +13,10 @@ public class AsListInference {
   public static void main(String[] args) {
     List<Snow> snow1 = Arrays.asList(
       new Crusty(), new Slush(), new Powder());
-
+    //  List<Snow> snow5 = Arrays.asList(
+      // new Crusty(), new Slush(), new Powder(), new Light());
     // Won't compile:
+    // 因为全部都是 Powder类型的，所以 Arrays.asList 会创建一个 List<Power> 而不是 List<Snow>
     // List<Snow> snow2 = Arrays.asList(
     //   new Light(), new Heavy());
     // Compiler says:
@@ -29,5 +31,15 @@ public class AsListInference {
     // explicit type argument specification:
     List<Snow> snow4 = Arrays.<Snow>asList(
        new Light(), new Heavy());
+    List<Snow> snow6 = Arrays.<Snow>asList(
+       new Light(), new Heavy()
+    );
+    int[] a = {5,2,3,1};
+    Arrays.sort(a);
+    for(int x : a) {
+      System.out.println(x);
+    }
+    System.out.println(Arrays.toString(a));
+    // System.out.println(a.toString());
   }
 } ///:~
