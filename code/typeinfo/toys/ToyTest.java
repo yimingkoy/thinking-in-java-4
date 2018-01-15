@@ -29,6 +29,7 @@ public class ToyTest {
   public static void main(String[] args) {
     Class c = null;
     try {
+      // 获得对应类的一个引用，如果这个类没加载就加载这个类（一个 Class 类的对象）
       c = Class.forName("typeinfo.toys.FancyToy");
     } catch(ClassNotFoundException e) {
       print("Can't find FancyToy");
@@ -41,6 +42,7 @@ public class ToyTest {
     Object obj = null;
     try {
       // Requires default constructor:
+      // 使用 newInstance() 来创建的类，必须带有默认的构造器。
       obj = up.newInstance();
     } catch(InstantiationException e) {
       print("Cannot instantiate");
