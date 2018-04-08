@@ -16,7 +16,7 @@
 其中 **classes** 文件夹下 为使用 javac 命令编译得到的部分类文件和使用 jar 命令打包得到的 jar 文件。**code** 文件夹下为源代码。
 
 ## 编译过程
-```
+```shell
 # 切换到 code 根目录下
 cd code
 
@@ -31,7 +31,7 @@ rm -r net
 ```
 
 ## 编译 java 文件
-```
+``` shell
 # 首先切换路径到对应的 .java 文件根目录下，以 GeneratorsTest.java 为例
 cd  code/arrays/
 
@@ -46,7 +46,6 @@ javac GeneratorsTest.java -classpath ../../classes
 javac GeneratorsTest.java
 
 # 方式三，Linux 系统将 net.jar 加入到环境变量 CLASSPATH 中的方式
-
 (1) 打开配置文件
 vim /etc/profile
 
